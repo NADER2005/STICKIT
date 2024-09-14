@@ -136,7 +136,7 @@ section .background_image img {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid_gap: 15px;
+    grid-gap: 15px;
 }
 
 .clothes_box .clothes_card {
@@ -176,7 +176,7 @@ section .background_image img {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid_gap: 15px;
+    grid-gap: 15px;
 }
 
 .Mugs_box .Mugs_card {
@@ -231,7 +231,7 @@ ul {
 }
 
 .footer_cal h4{
-    font_size: 18px;
+    font-size: 18px;
     color: white ;
     text-transform: capitalize;
     margin-bottom: 30px;
