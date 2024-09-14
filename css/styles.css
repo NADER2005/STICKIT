@@ -111,7 +111,7 @@ section .texts p {
 }
 
 section .background_image img {
-  width: 500px;
+  width: 530px;
   position: absolute;
   top: 25%;
   left: 60%;
