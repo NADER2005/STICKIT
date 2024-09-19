@@ -1,115 +1,298 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop Website</title>
-    <!-- CDN for Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- Below is the code for handling the icon -->
-    <link rel="icon" type="image/png" href="./data/Img/shopping-cart.png">
-</head>
-<body>
-    <section>
-        <header>
-            <div class="circle"></div>
-            <div class="circles"></div>
-            <a href="#" class="logo">Online<span>Store</span></a>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#Products">Products</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </header>
-        <div id="home" class="texts">
-            <h1>Online<span>Shopping</span></h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quod corrupti nihil iure voluptas quam quae assumenda qui laboriosam recusandae iusto, provident natus labore deserunt, sit nulla quaerat. Inventore, fugiat!</p>
-        </div>
-        <div class="background_image">
-            <img src="./data/Img/Online.avif">
-        </section>
-        <div class="clothes">
-          <h1 id="Products">Products</h1>
-          <p id="stickers">---stickers---</p>
-          <div class="clothes_box">
-              <div class="clothes_card">
-                  <img src="./data/Img/Messi.jpg">
-                  <h1>Stickers</h1>
-              </div>
-              <div class="clothes_card">
-                  <img src="./data/Img/Messi.jpg">
-                  <h1>Stickers</h1>
-              </div>
-              <div class="clothes_card">
-                  <img src="./data/Img/Messi.jpg">
-                  <h1>Stickers</h1>
-              </div>
-              <div class="clothes_card">
-                  <img src="./data/Img/Messi.jpg">
-                  <h1>Stickers</h1>
-              </div>
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STICKIT 🛒</title>
+    <link rel="icon" type="image/x-icon" href="/data/Img/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <!-- TODO Add the links -->
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-3 fw-bold" href="#"
+          ><span style="color: #ffc228">STICKIT</span>Store</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#landing"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+          </ul>
+          <div>
+            <img
+              src="./data/Img/night-mode.png"
+              alt="Dark Mode"
+              srcset=""
+              id="btnToggleDarkMode"
+              width="40px"
+            />
+            <span>Dark Mode Toggle</span>
           </div>
         </div>
-        <div id="Products" class="Mugs">
-            <p id="mugs">---Mugs---</p>
-            <div class="Mugs_box">
-                <div class="Mugs_card">
-                    <img src="./data/Img/Mugs.jpg">
-                    <h1>Mugs</h1>
-                </div>
-                <div class="Mugs_card">
-                    <img src="./data/Img/Mugs.jpg">
-                    <h1>Mugs</h1>
-                </div>
-                <div class="Mugs_card">
-                    <img src="./data/Img/Mugs.jpg">
-                    <h1>Mugs</h1>
-                </div>
-                <div class="Mugs_card">
-                    <img src="./data/Img/Mugs.jpg">
-                    <h1>Mugs</h1>
-                </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="my-5" id="landing">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div
+              class="col-12 col-lg-6 d-flex flex-column align-items-start justify-content-center mb-4 mb-lg-0"
+            >
+              <h1 class="display-3 fw-semibold" id="home">
+                <span>Online</span><span style="color: #4682b4">Shopping</span>
+              </h1>
+              <span class="text-break">
+                Stickit specializes in unique stickers and clothing with bold
+                designs, focusing on high quality, comfort, and creativity to
+                cater to modern fashion
+              </span>
             </div>
-        </div>
-        <footer class="footer">
-        <div class="main">
-            <div class="row">
-                <div id="contact" class="footer_cal">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="#">about us</a></li>
-                        <li><a href="#">services</a></li>
-                        <li><a href="#">privacy policy</a></li>
-                    </ul>
-                </div>
-                <div class="footer_cal">
-                    <h4>Get Help</h4>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">returns</a></li>
-                        <li><a href="#">payment options</a></li>
-                    </ul>
-                </div>
-                <div class="footer_cal">
-                    <h4>Online Shop</h4>
-                    <ul>
-                        <li><a href="#stickers">Stickers</a></li>
-                        <li><a href="#mugs">Mugs</a></li>
-                        <li><a href="#">T_Shirts</a></li>
-                    </ul>
-                </div>
-                <div class="footer_cal">
-                    <h4>Follow Us</h4>
-                        <div class="social">
-                            
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/stickit.1" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://wa.me/201205749083" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                        </div>
-                </div>
+            <div class="col-12 col-lg-6 d-flex justify-content-center">
+              <img
+                class="img-fluid"
+                src="./data/Img/Online.png"
+                alt="Shopping Cart image"
+                width="450px"
+              />
             </div>
+          </div>
         </div>
-        </footer>
-</body>
+      </section>
+
+      <section
+        class="d-flex justify-content-center flex-column align-items-center"
+      >
+        <h1
+          class="p-3 border border-2 rounded-pill"
+          style="border-color: #4682b4 !important; color: #ffc228"
+          id="Products"
+        >
+          Products
+        </h1>
+        <!-- Combined Container for Stickers and Mugs -->
+        <div class="container row m-5">
+          <h2 class="text-center w-100 my-5">Stickers</h2>
+          <!-- Stickers Items -->
+          <div class="col-6 col-md-3 mb-4">
+            <div class="p-2 border rounded-2" style="background-color: #4682b4">
+              <figure class="text-center">
+                <img
+                  src="./data/Img/Messi.jpg"
+                  class="rounded img-thumbnail img-fluid"
+                  alt="A picture of a product"
+                  width="100%"
+                />
+                <figcaption>Stickers</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <div class="p-2 border rounded-2" style="background-color: #4682b4">
+              <figure class="text-center">
+                <img
+                  src="./data/Img/Messi.jpg"
+                  class="rounded img-thumbnail img-fluid"
+                  alt="A picture of a product"
+                  width="100%"
+                />
+                <figcaption>Stickers</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <div class="p-2 border rounded-2" style="background-color: #4682b4">
+              <figure class="text-center">
+                <img
+                  src="./data/Img/Messi.jpg"
+                  class="rounded img-thumbnail img-fluid"
+                  alt="A picture of a product"
+                  width="100%"
+                />
+                <figcaption>Stickers</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <div class="p-2 border rounded-2" style="background-color: #4682b4">
+              <figure class="text-center">
+                <img
+                  src="./data/Img/Messi.jpg"
+                  class="rounded img-thumbnail img-fluid"
+                  alt="A picture of a product"
+                  width="100%"
+                />
+                <figcaption>Stickers</figcaption>
+              </figure>
+            </div>
+          </div>
+          <h2 class="text-center w-100 my-5">Mugs</h2>
+          <!-- Mugs Items -->
+          <div class="col-6 col-md-3 mb-4">
+            <div class="p-2 border rounded-2" style="background-color: #4682b4">
+              <figure class="text-center">
+                <img
+                  src="./data/Img/Mugs.jpg"
+                  class="rounded img-thumbnail img-fluid"
+                  alt="A picture of a product"
+                  width="100%"
+                />
+                <figcaption>Mugs</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <div class="p-2 border rounded-2" style="background-color: #4682b4">
+              <figure class="text-center">
+                <img
+                  src="./data/Img/Mugs.jpg"
+                  class="rounded img-thumbnail img-fluid"
+                  alt="A picture of a product"
+                  width="100%"
+                />
+                <figcaption>Mugs</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <div class="p-2 border rounded-2" style="background-color: #4682b4">
+              <figure class="text-center">
+                <img
+                  src="./data/Img/Mugs.jpg"
+                  class="rounded img-thumbnail img-fluid"
+                  alt="A picture of a product"
+                  width="100%"
+                />
+                <figcaption>Mugs</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <div class="p-2 border rounded-2" style="background-color: #4682b4">
+              <figure class="text-center">
+                <img
+                  src="./data/Img/Mugs.jpg"
+                  class="rounded img-thumbnail img-fluid"
+                  alt="A picture of a product"
+                  width="100%"
+                />
+                <figcaption>Mugs</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      id="footer"
+      class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary text-capitalize"
+    >
+      <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+        <div class="row">
+          <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+            <h5>Online Shop</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#">Stickers</a></li>
+              <li class="mb-2"><a href="#">Mugs</a></li>
+              <li class="mb-2"><a href="#">T-Shirts</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-lg-2 mb-3">
+            <h5>Get Help</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" target="_blank" rel="noopener">FAQ</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" target="_blank" rel="noopener">Returns Policy</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" target="_blank" rel="noopener">Payment Methods</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2 mb-3">
+            <h5>Company</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" target="_blank" rel="noopener">About us</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" target="_blank" rel="noopener">Services</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" target="_blank" rel="noopener">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2 mb-3">
+            <h5>Contact Us</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a
+                  class="text-decoration-none text-primary-emphasis"
+                  href="https://www.instagram.com/stickit.1"
+                  target="_blank"
+                  ><i class="fa-brands fa-instagram pe-2"> </i>instagram</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  class="text-decoration-none text-primary-emphasis"
+                  href="https://wa.me/201205749083"
+                  target="_blank"
+                  ><i class="fa-brands fa-whatsapp pe-2"></i>whatsapp</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-primary-emphasis"
+                  ><i class="fa-brands fa-facebook pe-2"></i>facebook</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
